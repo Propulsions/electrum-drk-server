@@ -1,7 +1,7 @@
 IRC is used by Electrum server to find 'peers' - other Electrum servers. The
 current list can be seen by running:
 
-    electrum-server peers
+    electrum-drk-server peers
 
 The following config file options are used by the IRC part of Electrum server:
 

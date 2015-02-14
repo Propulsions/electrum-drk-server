@@ -1,34 +1,40 @@
 [server]
 # username for running the daemon
-username = 
-# hostname. set it to a FQDN in order to be reached from outside
+username = electrum-drk
+password = someweirdpassword
+#hostname. set it to a FQDN in order to be reached from outside
+#report_host = xxx.xxxx.org
 host = localhost
 # ports
-electrum_rpc_port = 8010
-stratum_tcp_port = 50011
-#stratum_tcp_ssl_port = 50012
+electrum_rpc_port = 8000
+stratum_http_port = 8081
+stratum_http_ssl_port = 8082
+stratum_tcp_port = 50001
+stratum_tcp_ssl_port = 50002
 #report_host = 
-#report_stratum_tcp_port = 50011
-#report_stratum_tcp_ssl_port = 50012
-password = secret
-banner = Welcome to Electrum-DRK!
+#report_stratum_tcp_port = 50001
+#report_stratum_tcp_ssl_port = 50002
+banner = Welcome to Electrum!
 banner_file = /etc/electrum-drk.banner
-#irc = no
-#irc_nick = <yournickname>
-#ssl_certfile = /path/to/electrum-server.crt
-#ssl_keyfile = /path/to/electrum-server.key
-logfile = /var/log/electrum-drk.log
-donation_address = 
+irc = no
+irc_nick = mynickname
+ssl_certfile = /home/mypc/electrum/UTXO/server.crt
+ssl_keyfile = /home/mypc/electrum/UTXO/server.key
+logfile = /home/mypc/electrum/electrum-drk.log
+#donation_address = 
 
 [leveldb]
 # path to your database
-path = 
+path = /home/mypc/electrum/UTXO/DRK/electrum-drk-leveldb-utxo-10000
 # for each address, history will be pruned if it is longer than this limit
-pruning_limit = 100
+pruning_limit = 10000
 
 [darkcoind]
 darkcoind_host = localhost
 darkcoind_port = 9998
 # user and password from darkcoin.conf
-darkcoind_user = 
-darkcoind_password = 
+darkcoind_user = putuserhere
+darkcoind_password = putpasswordhere
+
+[network]
+type = darkcoin_main

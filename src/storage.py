@@ -67,7 +67,7 @@ class Storage(object):
         print_log("UTXO tree root hash:", self.root_hash.encode('hex'))
         print_log("Coins in database:", v)
 
-    # convert between bitcoin addresses and 20 bytes keys used for storage. 
+    # convert between darkcoin addresses and 20 bytes keys used for storage. 
     def address_to_key(self, addr):
         return bc_address_to_hash_160(addr)
 

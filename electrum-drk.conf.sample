@@ -37,4 +37,4 @@ darkcoind_user = putuserhere
 darkcoind_password = putpasswordhere
 
 [network]
-type = darkcoin_main
+type = Darkcoin_main

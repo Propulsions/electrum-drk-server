@@ -3,24 +3,24 @@ from setuptools import setup
 setup(
     name="electrum-drk-server",
     version="0.9",
-    scripts=['run_electrum_server','electrum-server'],
+    scripts=['run_electrum_drk_server','electrum-drk-server'],
     install_requires=['plyvel','jsonrpclib', 'irc>=11'],
     package_dir={
-        'electrumserver':'src'
+        'electrumdrkserver':'src'
         },
     py_modules=[
-        'electrumserver.__init__',
-        'electrumserver.utils',
-        'electrumserver.storage',
-        'electrumserver.deserialize',
-        'electrumserver.networks',
-        'electrumserver.blockchain_processor',
-        'electrumserver.server_processor',
-        'electrumserver.processor',
-        'electrumserver.version',
-        'electrumserver.ircthread',
-        'electrumserver.stratum_tcp',
-        'electrumserver.stratum_http'
+        'electrumdrkserver.__init__',
+        'electrumdrkserver.utils',
+        'electrumdrkserver.storage',
+        'electrumdrkserver.deserialize',
+        'electrumdrkserver.networks',
+        'electrumdrkserver.blockchain_processor',
+        'electrumdrkserver.server_processor',
+        'electrumdrkserver.processor',
+        'electrumdrkserver.version',
+        'electrumdrkserver.ircthread',
+        'electrumdrkserver.stratum_tcp',
+        'electrumdrkserver.stratum_http'
     ],
     description="Darkcoin Electrum Server",
     author="Thomas Voegtlin, Propulsion",

@@ -1,7 +1,8 @@
-Electrum-server for the Electrum client
-=========================================
+Electrum-drk-server for the Electrum Darkcoin client
+====================================================
 
   * Author: Thomas Voegtlin (ThomasV on the bitcointalk forum)
+  * Adapted to Darkcoin by ELM4Ever and Propulsions
   * Language: Python
 
 Features
@@ -11,7 +12,7 @@ Features
     described by Alan Reiner (see the 'ultimate blockchain
     compression' thread in the Bitcointalk forum)
 
-  * The server requires bitcoind, leveldb and plyvel
+  * The server requires darkcoind, leveldb and plyvel
 
   * The server code is open source. Anyone can run a server, removing
     single points of failure concerns.
@@ -27,7 +28,7 @@ Installation
   1. To install and run a server, see INSTALL. For greater
      detail on the installation process, see HOWTO.md.
 
-  2. To start and stop the server, use the 'electrum-server' script
+  2. To start and stop the server, use the 'electrum-drk-server' script
 
 
 
